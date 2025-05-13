@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-sky/20">
+    <div className="flex flex-col min-h-screen bg-cream/20">
       <Header />
       <main className="flex-grow">
         <Routes>

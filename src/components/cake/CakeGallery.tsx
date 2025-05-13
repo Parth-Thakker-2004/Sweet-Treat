@@ -20,7 +20,7 @@ const CakeGallery = ({ limit }: CakeGalleryProps) => {
           whileHover={{ y: -5 }}
           className="group"
         >
-          <div className="overflow-hidden rounded-lg shadow-md bg-white">
+          <div className="overflow-hidden rounded-lg shadow-md bg-cream">
             <div className="h-64 overflow-hidden">
               <img 
                 src={cake.imageUrl} 
@@ -29,11 +29,11 @@ const CakeGallery = ({ limit }: CakeGalleryProps) => {
               />
             </div>
             <div className="p-6">
-              <h3 className="font-serif text-xl font-semibold mb-2 text-primary">{cake.name}</h3>
-              <p className="text-gray-600 text-sm mb-3">{cake.description}</p>
+              <h3 className="font-serif text-xl font-semibold mb-2 text-mocha">{cake.name}</h3>
+              <p className="text-coffee text-sm mb-3">{cake.description}</p>
               <div className="flex flex-wrap gap-2">
                 {cake.tags.map(tag => (
-                  <span key={tag} className="text-xs px-2 py-1 bg-secondary/10 text-secondary rounded-full">
+                  <span key={tag} className="text-xs px-2 py-1 bg-sand/30 text-coffee rounded-full">
                     {tag}
                   </span>
                 ))}
