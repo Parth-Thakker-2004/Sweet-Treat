@@ -1,0 +1,190 @@
+/* Define custom properties first, before Tailwind imports */
+:root {
+  /* Ocean Teal color palette */
+  --color-dark-teal: #003135;
+  --color-teal: #024950;
+  --color-rust: #964734;
+  --color-turquoise: #0FA4AF;
+  --color-sky: #AFDDE5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-teal);
+    background-color: rgba(175, 221, 229, 0.2); /* sky with 20% opacity */
+  }
+  
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-sans {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+@layer components {
+  /* Add consistent padding to sections */
+  section, .content-section {
+    @apply py-10 md:py-16 px-4 md:px-8;
+  }
+  
+  /* Add subtle card styling */
+  .card, .content-card {
+    background-color: var(--color-sky);
+    @apply rounded shadow-sm p-6 mb-6;
+  }
+
+  /* Custom Ocean Teal theme classes */
+  .bg-dark-teal {
+    background-color: var(--color-dark-teal);
+  }
+  
+  .bg-teal {
+    background-color: var(--color-teal);
+  }
+  
+  .bg-rust {
+    background-color: var(--color-rust);
+  }
+  
+  .bg-turquoise {
+    background-color: var(--color-turquoise);
+  }
+  
+  .bg-sky {
+    background-color: var(--color-sky);
+  }
+  
+  /* Background with opacity */
+  .bg-sky-20 {
+    background-color: rgba(175, 221, 229, 0.2);
+  }
+  
+  .bg-sky-50 {
+    background-color: rgba(175, 221, 229, 0.5);
+  }
+  
+  .bg-dark-teal-10 {
+    background-color: rgba(0, 49, 53, 0.1);
+  }
+  
+  .text-dark-teal {
+    color: var(--color-dark-teal);
+  }
+  
+  .text-teal {
+    color: var(--color-teal);
+  }
+  
+  .text-rust {
+    color: var(--color-rust);
+  }
+  
+  .text-turquoise {
+    color: var(--color-turquoise);
+  }
+  
+  .text-sky {
+    color: var(--color-sky);
+  }
+
+  /* Hover states */
+  .hover\:bg-dark-teal:hover {
+    background-color: var(--color-dark-teal);
+  }
+  
+  .hover\:bg-teal:hover {
+    background-color: var(--color-teal);
+  }
+  
+  .hover\:bg-rust:hover {
+    background-color: var(--color-rust);
+  }
+  
+  .hover\:bg-turquoise:hover {
+    background-color: var(--color-turquoise);
+  }
+  
+  .hover\:bg-sky:hover {
+    background-color: var(--color-sky);
+  }
+  
+  .hover\:text-dark-teal:hover {
+    color: var(--color-dark-teal);
+  }
+  
+  .hover\:text-teal:hover {
+    color: var(--color-teal);
+  }
+  
+  .hover\:text-rust:hover {
+    color: var(--color-rust);
+  }
+  
+  .hover\:text-turquoise:hover {
+    color: var(--color-turquoise);
+  }
+  
+  .hover\:text-sky:hover {
+    color: var(--color-sky);
+  }
+
+  /* Border colors */
+  .border-dark-teal {
+    border-color: var(--color-dark-teal);
+  }
+  
+  .border-teal {
+    border-color: var(--color-teal);
+  }
+  
+  .border-rust {
+    border-color: var(--color-rust);
+  }
+  
+  .border-turquoise {
+    border-color: var(--color-turquoise);
+  }
+  
+  .border-sky {
+    border-color: var(--color-sky);
+  }
+
+  /* Fill colors for SVGs */
+  .fill-rust {
+    fill: var(--color-rust);
+  }
+  
+  .fill-sky {
+    fill: var(--color-sky);
+  }
+  
+  .fill-dark-teal {
+    fill: var(--color-dark-teal);
+  }
+
+  /* Focus states */
+  .focus\:ring-dark-teal:focus {
+    --tw-ring-color: var(--color-dark-teal);
+  }
+  
+  .focus\:ring-turquoise:focus {
+    --tw-ring-color: var(--color-turquoise);
+  }
+  
+  .focus\:border-dark-teal:focus {
+    border-color: var(--color-dark-teal);
+  }
+  
+  .focus\:border-turquoise:focus {
+    border-color: var(--color-turquoise);
+  }
+}
