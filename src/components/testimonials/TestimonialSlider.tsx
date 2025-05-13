@@ -38,40 +38,40 @@ const TestimonialSlider = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="bg-white rounded-lg shadow-md p-8 md:p-12 text-center relative"
+          className="bg-cream rounded-lg shadow-md p-8 md:p-12 text-center relative"
         >
-          <Quote className="text-accent/20 absolute top-6 left-6 w-16 h-16" />
+          <Quote className="text-coffee/20 absolute top-6 left-6 w-16 h-16" />
           
           <div className="mb-6">
             <img 
               src={testimonialData[current].avatar} 
               alt={testimonialData[current].name}
-              className="w-20 h-20 rounded-full mx-auto object-cover border-4 border-accent/20"
+              className="w-20 h-20 rounded-full mx-auto object-cover border-4 border-coffee/20"
             />
           </div>
           
-          <p className="text-gray-600 italic mb-6 text-lg relative z-10">
+          <p className="text-coffee italic mb-6 text-lg relative z-10">
             "{testimonialData[current].text}"
           </p>
           
-          <h3 className="font-serif text-xl font-semibold text-primary">
+          <h3 className="font-serif text-xl font-semibold text-mocha">
             {testimonialData[current].name}
           </h3>
-          <p className="text-sm text-gray-500">{testimonialData[current].occasion}</p>
+          <p className="text-sm text-coffee">{testimonialData[current].occasion}</p>
         </motion.div>
       </AnimatePresence>
       
       <div className="flex justify-center mt-8 gap-3">
         <button 
           onClick={goToPrev}
-          className="bg-white text-primary hover:bg-primary hover:text-white transition-colors p-2 rounded-full shadow-md"
+          className="bg-cream text-mocha hover:bg-mocha hover:text-cream transition-colors p-2 rounded-full shadow-md"
           aria-label="Previous testimonial"
         >
           <ChevronLeft size={20} />
         </button>
         <button 
           onClick={goToNext}
-          className="bg-white text-primary hover:bg-primary hover:text-white transition-colors p-2 rounded-full shadow-md"
+          className="bg-cream text-mocha hover:bg-mocha hover:text-cream transition-colors p-2 rounded-full shadow-md"
           aria-label="Next testimonial"
         >
           <ChevronRight size={20} />

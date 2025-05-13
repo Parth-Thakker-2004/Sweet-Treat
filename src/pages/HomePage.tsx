@@ -25,7 +25,7 @@ const HomePage = () => {
     <div className="w-full overflow-hidden">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-dark-teal/90 to-dark-teal/60 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-mocha/90 to-mocha/60 z-10"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
@@ -33,7 +33,7 @@ const HomePage = () => {
           }}
         ></div>
         
-        <div className="container mx-auto px-6 md:px-8 relative z-20 text-sky">
+        <div className="container mx-auto px-6 md:px-8 relative z-20 text-cream">
           <motion.div
             initial="hidden"
             animate={isLoaded ? "visible" : "hidden"}
@@ -43,19 +43,19 @@ const HomePage = () => {
             <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
               Handcrafted Cakes for Special Moments
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-sky/90 leading-relaxed">
+            <p className="text-lg md:text-xl mb-8 text-cream/90 leading-relaxed">
               Delicious, beautiful, and made with love. Every cake tells a story.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link 
                 to="/gallery" 
-                className="bg-sky text-dark-teal px-8 py-4 rounded-full font-medium hover:bg-rust hover:text-sky transition-colors shadow-md hover:shadow-lg"
+                className="bg-cream text-mocha px-8 py-4 rounded-full font-medium hover:bg-coffee hover:text-cream transition-colors shadow-md hover:shadow-lg"
               >
                 View Gallery
               </Link>
               <Link 
                 to="/contact" 
-                className="bg-rust text-sky px-8 py-4 rounded-full font-medium hover:bg-sky hover:text-dark-teal transition-colors shadow-md hover:shadow-lg"
+                className="bg-coffee text-cream px-8 py-4 rounded-full font-medium hover:bg-cream hover:text-mocha transition-colors shadow-md hover:shadow-lg"
               >
                 Order Now
               </Link>
@@ -65,7 +65,7 @@ const HomePage = () => {
       </section>
 
       {/* Featured Cakes */}
-      <section className="py-24 bg-sky/20">
+      <section className="py-24 bg-cream/20">
         <div className="container mx-auto px-6 md:px-8">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -74,11 +74,11 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-mocha mb-4">
               Our Signature Creations
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-            <p className="text-teal max-w-2xl mx-auto leading-relaxed">
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+            <p className="text-mocha max-w-2xl mx-auto leading-relaxed">
               Each cake is a unique masterpiece, crafted with premium ingredients and attention to every delicious detail.
             </p>
           </motion.div>
@@ -88,7 +88,7 @@ const HomePage = () => {
           <div className="text-center mt-16">
             <Link 
               to="/gallery" 
-              className="bg-dark-teal text-sky px-8 py-4 rounded-full font-medium hover:bg-rust transition-colors inline-flex items-center gap-2 shadow-md hover:shadow-lg"
+              className="bg-mocha text-cream px-8 py-4 rounded-full font-medium hover:bg-coffee transition-colors inline-flex items-center gap-2 shadow-md hover:shadow-lg"
             >
               View All Creations <ArrowRight size={18} />
             </Link>
@@ -97,7 +97,7 @@ const HomePage = () => {
       </section>
       
       {/* About Section Preview */}
-      <section className="py-24 bg-sky">
+      <section className="py-24 bg-cream">
         <div className="container mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div 
@@ -121,22 +121,22 @@ const HomePage = () => {
               viewport={{ once: true }}
               className="p-2"
             >
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark-teal mb-4">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-mocha mb-4">
                 Meet the Baker
               </h2>
-              <div className="w-20 h-1 bg-rust mb-8"></div>
-              <p className="text-teal mb-6 leading-relaxed">
+              <div className="w-20 h-1 bg-coffee mb-8"></div>
+              <p className="text-mocha mb-6 leading-relaxed">
                 Hi, I'm Sarah! I've been baking since I was a child, learning first from my grandmother. 
                 What started as a passion project has blossomed into Sweet Creations, where I craft 
                 custom cakes for life's special moments.
               </p>
-              <p className="text-teal mb-8 leading-relaxed">
+              <p className="text-mocha mb-8 leading-relaxed">
                 Each cake I create is made with premium ingredients, meticulous attention to detail, 
                 and most importantly, lots of love.
               </p>
               <Link 
                 to="/about" 
-                className="bg-dark-teal text-sky px-8 py-4 rounded-full font-medium hover:bg-rust transition-colors inline-flex items-center gap-2 shadow-md hover:shadow-lg"
+                className="bg-mocha text-cream px-8 py-4 rounded-full font-medium hover:bg-coffee transition-colors inline-flex items-center gap-2 shadow-md hover:shadow-lg"
               >
                 Learn More <ArrowRight size={18} />
               </Link>
@@ -146,7 +146,7 @@ const HomePage = () => {
       </section>
       
       {/* Process Section */}
-      <section className="py-24 bg-sky/20">
+      <section className="py-24 bg-cream/20">
         <div className="container mx-auto px-6 md:px-8">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -155,11 +155,11 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-mocha mb-4">
               Our Process
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-            <p className="text-teal max-w-2xl mx-auto leading-relaxed">
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+            <p className="text-mocha max-w-2xl mx-auto leading-relaxed">
               From consultation to celebration, we ensure every step creates the perfect cake for your special occasion.
             </p>
           </motion.div>
@@ -188,7 +188,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-sky rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+                className="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
               >
                 <div className="h-48 overflow-hidden">
                   <img 
@@ -198,10 +198,10 @@ const HomePage = () => {
                   />
                 </div>
                 <div className="p-6 text-center">
-                  <h3 className="font-serif text-xl font-semibold text-dark-teal mb-3">
+                  <h3 className="font-serif text-xl font-semibold text-mocha mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-teal leading-relaxed">
+                  <p className="text-coffee leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -212,7 +212,7 @@ const HomePage = () => {
       </section>
       
       {/* Testimonials */}
-      <section className="py-24 bg-sky">
+      <section className="py-24 bg-cream">
         <div className="container mx-auto px-6 md:px-8">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -221,16 +221,16 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-mocha mb-4">
               Happy Customers
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
             <div className="flex justify-center gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={20} className="fill-rust text-rust" />
+                <Star key={i} size={20} className="fill-coffee text-coffee" />
               ))}
             </div>
-            <p className="text-teal max-w-2xl mx-auto leading-relaxed">
+            <p className="text-mocha max-w-2xl mx-auto leading-relaxed">
               Don't just take our word for it. Here's what our customers have to say about their Sweet Creations experience.
             </p>
           </motion.div>
@@ -240,7 +240,7 @@ const HomePage = () => {
       </section>
       
       {/* CTA */}
-      <section className="py-24 bg-dark-teal text-sky relative overflow-hidden">
+      <section className="py-24 bg-mocha text-cream relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ 
@@ -258,12 +258,12 @@ const HomePage = () => {
               <h2 className="font-serif text-3xl md:text-5xl font-bold mb-6">
                 Ready to Order Your Dream Cake?
               </h2>
-              <p className="text-lg md:text-xl mb-10 text-sky/90 leading-relaxed">
+              <p className="text-lg md:text-xl mb-10 text-cream/90 leading-relaxed">
                 Whether it's a birthday, wedding, or special celebration, we're here to create something unforgettable.
               </p>
               <Link 
                 to="/contact" 
-                className="bg-rust text-sky px-10 py-5 rounded-full font-medium text-lg hover:bg-sky hover:text-dark-teal transition-colors inline-block shadow-md hover:shadow-lg"
+                className="bg-coffee text-cream px-10 py-5 rounded-full font-medium text-lg hover:bg-cream hover:text-mocha transition-colors inline-block shadow-md hover:shadow-lg"
               >
                 Get in Touch
               </Link>
