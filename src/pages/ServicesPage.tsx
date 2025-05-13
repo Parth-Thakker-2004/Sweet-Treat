@@ -59,7 +59,7 @@ const ServicesPage = () => {
   return (
     <div className="pt-28 pb-24">
       {/* Hero Section */}
-      <section className="bg-dark-teal text-sky py-20 shadow-md">
+      <section className="bg-mocha text-cream py-20 shadow-md">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h1 
@@ -83,14 +83,14 @@ const ServicesPage = () => {
       </section>
       
       {/* Services Categories */}
-      <section className="py-20 bg-sky/20">
+      <section className="py-20 bg-cream/20">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="font-serif text-3xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl font-bold text-mocha mb-4">
               What We Offer
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-            <p className="text-teal leading-relaxed">
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+            <p className="text-coffee leading-relaxed">
               From intimate celebrations to grand events, we create custom cakes for every occasion.
             </p>
           </div>
@@ -108,21 +108,21 @@ const ServicesPage = () => {
                 }`}
               >
                 <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                  <div className="bg-sky p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="font-serif text-2xl font-bold text-dark-teal mb-3">
+                  <div className="bg-cream p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 className="font-serif text-2xl font-bold text-mocha mb-3">
                       {category.title}
                     </h3>
-                    <div className="w-16 h-1 bg-rust mb-6"></div>
-                    <p className="text-teal mb-8 leading-relaxed">
+                    <div className="w-16 h-1 bg-coffee mb-6"></div>
+                    <p className="text-coffee mb-8 leading-relaxed">
                       {category.description}
                     </p>
                     <ul className="space-y-4">
                       {category.services.map(service => (
                         <li key={service} className="flex items-start">
-                          <div className="bg-turquoise p-1 rounded-full mr-3 shadow-sm">
-                            <Check className="text-dark-teal" size={18} />
+                          <div className="bg-vanilla p-1 rounded-full mr-3 shadow-sm">
+                            <Check className="text-mocha" size={18} />
                           </div>
-                          <span className="text-teal">{service}</span>
+                          <span className="text-coffee">{service}</span>
                         </li>
                       ))}
                     </ul>
@@ -143,14 +143,14 @@ const ServicesPage = () => {
       </section>
       
       {/* Flavors and Options */}
-      <section className="py-20 bg-sky">
+      <section className="py-20 bg-cream">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="font-serif text-3xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl font-bold text-mocha mb-4">
               Flavors & Options
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-            <p className="text-teal leading-relaxed">
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+            <p className="text-coffee leading-relaxed">
               Choose from our selection of delicious flavors, fillings, and frostings.
             </p>
           </div>
@@ -163,16 +163,16 @@ const ServicesPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-sky/50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow"
+                className="bg-cream/50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow"
               >
-                <h3 className="font-serif text-xl font-semibold text-dark-teal mb-6 text-center">
+                <h3 className="font-serif text-xl font-semibold text-mocha mb-6 text-center">
                   {flavor.category}
                 </h3>
                 <ul className="space-y-3">
                   {flavor.options.map(option => (
                     <li key={option} className="flex items-center">
-                      <div className="w-2 h-2 rounded-full bg-rust mr-3 shadow-sm"></div>
-                      <span className="text-teal">{option}</span>
+                      <div className="w-2 h-2 rounded-full bg-coffee mr-3 shadow-sm"></div>
+                      <span className="text-coffee">{option}</span>
                     </li>
                   ))}
                 </ul>
@@ -185,15 +185,15 @@ const ServicesPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="max-w-2xl mx-auto mt-16 bg-dark-teal/5 rounded-lg p-8 shadow-md border-l-4 border-rust"
+            className="max-w-2xl mx-auto mt-16 bg-mocha/5 rounded-lg p-8 shadow-md border-l-4 border-coffee"
           >
-            <h3 className="font-serif text-xl font-semibold text-dark-teal mb-4 text-center">
+            <h3 className="font-serif text-xl font-semibold text-mocha mb-4 text-center">
               Custom Options
             </h3>
-            <p className="text-teal text-center mb-4 leading-relaxed">
+            <p className="text-coffee text-center mb-4 leading-relaxed">
               Don't see what you're looking for? We're happy to work with you on custom flavors and dietary needs.
             </p>
-            <p className="text-teal text-center leading-relaxed">
+            <p className="text-coffee text-center leading-relaxed">
               Available upon request: Vegan, Gluten-Free, Sugar-Free, Nut-Free, and other allergen-friendly options.
             </p>
           </motion.div>
@@ -201,14 +201,14 @@ const ServicesPage = () => {
       </section>
       
       {/* Order Process */}
-      <section className="py-20 bg-sky/20">
+      <section className="py-20 bg-cream/20">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="font-serif text-3xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl font-bold text-mocha mb-4">
               How To Order
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-            <p className="text-teal leading-relaxed">
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+            <p className="text-coffee leading-relaxed">
               Simple steps to get your perfect cake.
             </p>
           </div>
@@ -242,15 +242,15 @@ const ServicesPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-sky p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center"
+                className="bg-cream p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center"
               >
-                <div className="bg-turquoise/30 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-rust shadow-sm">
-                  <span className="font-serif text-2xl font-bold text-dark-teal">{step.step}</span>
+                <div className="bg-vanilla/30 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-coffee shadow-sm">
+                  <span className="font-serif text-2xl font-bold text-mocha">{step.step}</span>
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-dark-teal mb-3">
+                <h3 className="font-serif text-xl font-semibold text-mocha mb-3">
                   {step.title}
                 </h3>
-                <p className="text-teal leading-relaxed">
+                <p className="text-coffee leading-relaxed">
                   {step.description}
                 </p>
               </motion.div>
@@ -260,14 +260,14 @@ const ServicesPage = () => {
       </section>
       
       {/* Pricing */}
-      <section className="py-20 bg-sky">
+      <section className="py-20 bg-cream">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="font-serif text-3xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl font-bold text-mocha mb-4">
               Pricing Information
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-            <p className="text-teal leading-relaxed">
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+            <p className="text-coffee leading-relaxed">
               Our cakes are custom-priced based on size, design complexity, and special requirements.
             </p>
           </div>
@@ -278,9 +278,9 @@ const ServicesPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-sky/50 rounded-lg p-8 shadow-md"
+              className="bg-cream/50 rounded-lg p-8 shadow-md"
             >
-              <h3 className="font-serif text-xl font-semibold text-dark-teal mb-6 border-b border-rust/30 pb-3">
+              <h3 className="font-serif text-xl font-semibold text-mocha mb-6 border-b border-coffee/30 pb-3">
                 Starting Prices
               </h3>
               <ul className="space-y-4">
@@ -293,10 +293,10 @@ const ServicesPage = () => {
                   "Special Design Cakes: From $150"
                 ].map(item => (
                   <li key={item} className="flex items-start">
-                    <div className="bg-turquoise p-1 rounded-full mr-3 shadow-sm">
-                      <Check className="text-dark-teal" size={18} />
+                    <div className="bg-vanilla p-1 rounded-full mr-3 shadow-sm">
+                      <Check className="text-mocha" size={18} />
                     </div>
-                    <span className="text-teal">{item}</span>
+                    <span className="text-coffee">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -307,9 +307,9 @@ const ServicesPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-sky/50 rounded-lg p-8 shadow-md"
+              className="bg-cream/50 rounded-lg p-8 shadow-md"
             >
-              <h3 className="font-serif text-xl font-semibold text-dark-teal mb-6 border-b border-rust/30 pb-3">
+              <h3 className="font-serif text-xl font-semibold text-mocha mb-6 border-b border-coffee/30 pb-3">
                 Additional Services
               </h3>
               <ul className="space-y-4">
@@ -322,10 +322,10 @@ const ServicesPage = () => {
                   "Specialty Dietary Requirements: From $10"
                 ].map(item => (
                   <li key={item} className="flex items-start">
-                    <div className="bg-turquoise p-1 rounded-full mr-3 shadow-sm">
-                      <Check className="text-dark-teal" size={18} />
+                    <div className="bg-vanilla p-1 rounded-full mr-3 shadow-sm">
+                      <Check className="text-mocha" size={18} />
                     </div>
-                    <span className="text-teal">{item}</span>
+                    <span className="text-coffee">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -333,7 +333,7 @@ const ServicesPage = () => {
           </div>
           
           <div className="text-center mt-12">
-            <p className="text-teal italic max-w-3xl mx-auto">
+            <p className="text-coffee italic max-w-3xl mx-auto">
               * Prices may vary based on design complexity, special ingredients, and seasonal availability.
             </p>
           </div>
@@ -341,7 +341,7 @@ const ServicesPage = () => {
       </section>
       
       {/* CTA */}
-      <section className="py-20 bg-dark-teal text-sky">
+      <section className="py-20 bg-mocha text-cream">
         <div className="container mx-auto px-6 md:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
             Ready to Order Your Dream Cake?
@@ -351,7 +351,7 @@ const ServicesPage = () => {
           </p>
           <a 
             href="/contact" 
-            className="bg-sky text-dark-teal hover:bg-rust hover:text-sky transition-colors px-8 py-4 rounded-full font-medium inline-block shadow-md hover:shadow-lg"
+            className="bg-cream text-mocha hover:bg-coffee hover:text-cream transition-colors px-8 py-4 rounded-full font-medium inline-block shadow-md hover:shadow-lg"
           >
             Get Started
           </a>

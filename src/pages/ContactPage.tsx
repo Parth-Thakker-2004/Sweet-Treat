@@ -45,7 +45,7 @@ const ContactPage = () => {
   return (
     <div className="pt-28 pb-20">
       {/* Hero Section */}
-      <section className="bg-dark-teal text-sky py-20 shadow-md">
+      <section className="bg-mocha text-cream py-20 shadow-md">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h1 
@@ -69,7 +69,7 @@ const ContactPage = () => {
       </section>
       
       {/* Contact Form and Info */}
-      <section className="py-20 bg-sky/20">
+      <section className="py-20 bg-cream/20">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -78,49 +78,49 @@ const ContactPage = () => {
                 initial={{ opacity: 0, x: -30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
-                className="p-6 md:p-8 bg-sky rounded-lg shadow-md"
+                className="p-6 md:p-8 bg-cream rounded-lg shadow-md"
               >
-                <h2 className="font-serif text-3xl font-bold text-dark-teal mb-6">
+                <h2 className="font-serif text-3xl font-bold text-mocha mb-6">
                   Get in Touch
                 </h2>
-                <div className="w-20 h-1 bg-rust mb-8"></div>
-                <p className="text-teal mb-8 leading-relaxed">
+                <div className="w-20 h-1 bg-coffee mb-8"></div>
+                <p className="text-mocha mb-8 leading-relaxed">
                   Have a question or ready to order a cake? Contact us using the information below 
                   or fill out the form to start creating your custom cake.
                 </p>
                 
                 <div className="space-y-8">
                   <div className="flex items-start">
-                    <div className="bg-dark-teal/10 p-3 rounded-full mr-4 shadow-sm">
-                      <Mail className="text-dark-teal" size={20} />
+                    <div className="bg-mocha/10 p-3 rounded-full mr-4 shadow-sm">
+                      <Mail className="text-mocha" size={20} />
                     </div>
                     <div>
-                      <h3 className="font-medium text-dark-teal mb-1">Email Us</h3>
-                      <a href="mailto:hello@sweetcreations.com" className="text-teal hover:text-rust transition-colors">
+                      <h3 className="font-medium text-mocha mb-1">Email Us</h3>
+                      <a href="mailto:hello@sweetcreations.com" className="text-coffee hover:text-mocha transition-colors">
                         hello@sweetcreations.com
                       </a>
                     </div>
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="bg-dark-teal/10 p-3 rounded-full mr-4 shadow-sm">
-                      <Phone className="text-dark-teal" size={20} />
+                    <div className="bg-mocha/10 p-3 rounded-full mr-4 shadow-sm">
+                      <Phone className="text-mocha" size={20} />
                     </div>
                     <div>
-                      <h3 className="font-medium text-dark-teal mb-1">Call Us</h3>
-                      <a href="tel:+1234567890" className="text-teal hover:text-rust transition-colors">
+                      <h3 className="font-medium text-mocha mb-1">Call Us</h3>
+                      <a href="tel:+1234567890" className="text-coffee hover:text-mocha transition-colors">
                         (123) 456-7890
                       </a>
                     </div>
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="bg-dark-teal/10 p-3 rounded-full mr-4 shadow-sm">
-                      <MapPin className="text-dark-teal" size={20} />
+                    <div className="bg-mocha/10 p-3 rounded-full mr-4 shadow-sm">
+                      <MapPin className="text-mocha" size={20} />
                     </div>
                     <div>
-                      <h3 className="font-medium text-dark-teal mb-1">Location</h3>
-                      <p className="text-teal">
+                      <h3 className="font-medium text-mocha mb-1">Location</h3>
+                      <p className="text-coffee">
                         123 Baker Street<br />
                         Los Angeles, CA 90001
                       </p>
@@ -128,12 +128,12 @@ const ContactPage = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="bg-dark-teal/10 p-3 rounded-full mr-4 shadow-sm">
-                      <Clock className="text-dark-teal" size={20} />
+                    <div className="bg-mocha/10 p-3 rounded-full mr-4 shadow-sm">
+                      <Clock className="text-mocha" size={20} />
                     </div>
                     <div>
-                      <h3 className="font-medium text-dark-teal mb-1">Hours</h3>
-                      <p className="text-teal">
+                      <h3 className="font-medium text-mocha mb-1">Hours</h3>
+                      <p className="text-coffee">
                         Monday - Friday: 9am - 6pm<br />
                         Saturday: 10am - 4pm<br />
                         Sunday: Closed
@@ -149,19 +149,19 @@ const ContactPage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="bg-sky rounded-lg shadow-md p-8 border border-sky/30">
-                  <h2 className="font-serif text-2xl font-bold text-dark-teal mb-6">
+                <div className="bg-cream rounded-lg shadow-md p-8 border border-cream/30">
+                  <h2 className="font-serif text-2xl font-bold text-mocha mb-6">
                     Cake Inquiry Form
                   </h2>
                   
                   {formStatus === 'success' && (
-                    <div className="bg-turquoise/20 text-teal p-4 rounded-lg mb-6 border border-turquoise/30">
+                    <div className="bg-vanilla/20 text-mocha p-4 rounded-lg mb-6 border border-vanilla/30">
                       Thank you for your inquiry! We'll get back to you soon.
                     </div>
                   )}
                   
                   {formStatus === 'error' && (
-                    <div className="bg-rust/10 text-rust p-4 rounded-lg mb-6 border border-rust/30">
+                    <div className="bg-coffee/10 text-coffee p-4 rounded-lg mb-6 border border-coffee/30">
                       There was an error submitting your form. Please try again.
                     </div>
                   )}
@@ -169,7 +169,7 @@ const ContactPage = () => {
                   <form onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-teal mb-2">
+                        <label htmlFor="name" className="block text-sm font-medium text-mocha mb-2">
                           Your Name*
                         </label>
                         <input
@@ -179,11 +179,11 @@ const ContactPage = () => {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 border border-sky/60 rounded-lg focus:ring-2 focus:ring-dark-teal focus:border-dark-teal transition-all duration-200"
+                          className="w-full px-4 py-3 border border-cream/60 rounded-lg focus:ring-2 focus:ring-mocha focus:border-mocha transition-all duration-200"
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-teal mb-2">
+                        <label htmlFor="email" className="block text-sm font-medium text-mocha mb-2">
                           Email Address*
                         </label>
                         <input
@@ -193,14 +193,14 @@ const ContactPage = () => {
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 border border-sky/60 rounded-lg focus:ring-2 focus:ring-dark-teal focus:border-dark-teal transition-all duration-200"
+                          className="w-full px-4 py-3 border border-cream/60 rounded-lg focus:ring-2 focus:ring-mocha focus:border-mocha transition-all duration-200"
                         />
                       </div>
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-teal mb-2">
+                        <label htmlFor="phone" className="block text-sm font-medium text-mocha mb-2">
                           Phone Number*
                         </label>
                         <input
@@ -210,11 +210,11 @@ const ContactPage = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 border border-sky/60 rounded-lg focus:ring-2 focus:ring-dark-teal focus:border-dark-teal transition-all duration-200"
+                          className="w-full px-4 py-3 border border-cream/60 rounded-lg focus:ring-2 focus:ring-mocha focus:border-mocha transition-all duration-200"
                         />
                       </div>
                       <div>
-                        <label htmlFor="eventDate" className="block text-sm font-medium text-teal mb-2">
+                        <label htmlFor="eventDate" className="block text-sm font-medium text-mocha mb-2">
                           Event Date
                         </label>
                         <input
@@ -223,14 +223,14 @@ const ContactPage = () => {
                           name="eventDate"
                           value={formData.eventDate}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 border border-sky/60 rounded-lg focus:ring-2 focus:ring-dark-teal focus:border-dark-teal transition-all duration-200"
+                          className="w-full px-4 py-3 border border-cream/60 rounded-lg focus:ring-2 focus:ring-mocha focus:border-mocha transition-all duration-200"
                         />
                       </div>
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                       <div>
-                        <label htmlFor="eventType" className="block text-sm font-medium text-teal mb-2">
+                        <label htmlFor="eventType" className="block text-sm font-medium text-mocha mb-2">
                           Event Type
                         </label>
                         <select
@@ -238,7 +238,7 @@ const ContactPage = () => {
                           name="eventType"
                           value={formData.eventType}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 border border-sky/60 rounded-lg focus:ring-2 focus:ring-dark-teal focus:border-dark-teal transition-all duration-200 bg-white"
+                          className="w-full px-4 py-3 border border-cream/60 rounded-lg focus:ring-2 focus:ring-mocha focus:border-mocha transition-all duration-200 bg-white"
                         >
                           <option value="">Select Event Type</option>
                           <option value="Birthday">Birthday</option>
@@ -250,7 +250,7 @@ const ContactPage = () => {
                         </select>
                       </div>
                       <div>
-                        <label htmlFor="guestCount" className="block text-sm font-medium text-teal mb-2">
+                        <label htmlFor="guestCount" className="block text-sm font-medium text-mocha mb-2">
                           Number of Guests
                         </label>
                         <input
@@ -259,13 +259,13 @@ const ContactPage = () => {
                           name="guestCount"
                           value={formData.guestCount}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 border border-sky/60 rounded-lg focus:ring-2 focus:ring-dark-teal focus:border-dark-teal transition-all duration-200"
+                          className="w-full px-4 py-3 border border-cream/60 rounded-lg focus:ring-2 focus:ring-mocha focus:border-mocha transition-all duration-200"
                         />
                       </div>
                     </div>
                     
                     <div className="mb-8">
-                      <label htmlFor="message" className="block text-sm font-medium text-teal mb-2">
+                      <label htmlFor="message" className="block text-sm font-medium text-mocha mb-2">
                         Your Message*
                       </label>
                       <textarea
@@ -275,14 +275,14 @@ const ContactPage = () => {
                         onChange={handleChange}
                         required
                         rows={5}
-                        className="w-full px-4 py-3 border border-sky/60 rounded-lg focus:ring-2 focus:ring-dark-teal focus:border-dark-teal transition-all duration-200"
+                        className="w-full px-4 py-3 border border-cream/60 rounded-lg focus:ring-2 focus:ring-mocha focus:border-mocha transition-all duration-200"
                         placeholder="Tell us about your cake idea, flavor preferences, design inspiration, etc."
                       ></textarea>
                     </div>
                     
                     <button
                       type="submit"
-                      className="bg-dark-teal text-sky px-8 py-3 rounded-full font-medium hover:bg-rust transition-colors duration-300 inline-flex items-center gap-2 shadow-sm hover:shadow"
+                      className="bg-mocha text-cream px-8 py-3 rounded-full font-medium hover:bg-coffee transition-colors duration-300 inline-flex items-center gap-2 shadow-sm hover:shadow"
                     >
                       Send Message <Send size={18} />
                     </button>
@@ -295,15 +295,15 @@ const ContactPage = () => {
       </section>
       
       {/* FAQ Section */}
-      <section className="py-20 bg-sky">
+      <section className="py-20 bg-cream">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="font-serif text-3xl font-bold text-dark-teal mb-4">
+              <h2 className="font-serif text-3xl font-bold text-mocha mb-4">
                 Frequently Asked Questions
               </h2>
-              <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-              <p className="text-teal">
+              <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+              <p className="text-coffee">
                 Answers to common questions about our services.
               </p>
             </div>
@@ -337,12 +337,12 @@ const ContactPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-sky/60 rounded-lg p-8 shadow-sm border-l-4 border-rust"
+                  className="bg-cream/60 rounded-lg p-8 shadow-sm border-l-4 border-coffee"
                 >
-                  <h3 className="font-serif text-xl font-semibold text-dark-teal mb-3">
+                  <h3 className="font-serif text-xl font-semibold text-mocha mb-3">
                     {faq.question}
                   </h3>
-                  <p className="text-teal leading-relaxed">
+                  <p className="text-coffee leading-relaxed">
                     {faq.answer}
                   </p>
                 </motion.div>

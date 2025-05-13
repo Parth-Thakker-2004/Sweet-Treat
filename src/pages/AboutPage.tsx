@@ -4,7 +4,7 @@ const AboutPage = () => {
   return (
     <div className="pt-28 pb-24">
       {/* Hero Section */}
-      <section className="bg-dark-teal text-sky py-20 shadow-md">
+      <section className="bg-mocha text-cream py-20 shadow-md">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <motion.h1 
@@ -28,7 +28,7 @@ const AboutPage = () => {
       </section>
       
       {/* Baker Story */}
-      <section className="py-20 bg-sky/20">
+      <section className="py-20 bg-cream/20">
         <div className="container mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -38,21 +38,21 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className="p-2"
             >
-              <h2 className="font-serif text-3xl font-bold text-dark-teal mb-4">
+              <h2 className="font-serif text-3xl font-bold text-mocha mb-4">
                 Meet Sarah, The Baker
               </h2>
-              <div className="w-20 h-1 bg-rust mb-8"></div>
-              <p className="text-teal mb-6 leading-relaxed">
+              <div className="w-20 h-1 bg-coffee mb-8"></div>
+              <p className="text-coffee mb-6 leading-relaxed">
                 My journey into the world of cake artistry began in my grandmother's kitchen. 
                 As a child, I would stand on a stool beside her, eagerly watching as she transformed 
                 simple ingredients into magical creations.
               </p>
-              <p className="text-teal mb-6 leading-relaxed">
+              <p className="text-coffee mb-6 leading-relaxed">
                 After studying culinary arts with a specialization in pastry, I worked in several 
                 high-end bakeries before deciding to pursue my dream of creating custom cakes for 
                 special occasions.
               </p>
-              <p className="text-teal leading-relaxed">
+              <p className="text-coffee leading-relaxed">
                 Sweet Creations was born from my passion for both baking and art. I believe that 
                 a cake should not only taste delicious but also tell a story and create a memorable 
                 experience for every celebration.
@@ -77,14 +77,14 @@ const AboutPage = () => {
       </section>
       
       {/* Our Process */}
-      <section className="py-20 bg-sky">
+      <section className="py-20 bg-cream">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="font-serif text-3xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl font-bold text-mocha mb-4">
               Our Cake Creation Process
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-            <p className="text-teal">
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+            <p className="text-coffee">
               From concept to celebration, we ensure every step results in the perfect cake for your special occasion.
             </p>
           </div>
@@ -113,19 +113,19 @@ const AboutPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-sky/20 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow"
+                className="bg-cream/20 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow"
               >
-                <div className="rounded-full overflow-hidden w-28 h-28 mx-auto mb-6 shadow-sm border-2 border-rust/20">
+                <div className="rounded-full overflow-hidden w-28 h-28 mx-auto mb-6 shadow-sm border-2 border-coffee/20">
                   <img 
                     src={step.icon} 
                     alt={step.title} 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="font-serif text-xl font-semibold text-dark-teal mb-4">
+                <h3 className="font-serif text-xl font-semibold text-mocha mb-4">
                   {step.title}
                 </h3>
-                <p className="text-teal leading-relaxed">
+                <p className="text-coffee leading-relaxed">
                   {step.description}
                 </p>
               </motion.div>
@@ -135,14 +135,14 @@ const AboutPage = () => {
       </section>
       
       {/* Values */}
-      <section className="py-20 bg-sky/20">
+      <section className="py-20 bg-cream/20">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="font-serif text-3xl font-bold text-dark-teal mb-4">
+            <h2 className="font-serif text-3xl font-bold text-mocha mb-4">
               Our Values
             </h2>
-            <div className="w-16 h-1 bg-rust mx-auto mb-6"></div>
-            <p className="text-teal">
+            <div className="w-16 h-1 bg-coffee mx-auto mb-6"></div>
+            <p className="text-coffee">
               The principles that guide everything we create at Sweet Creations.
             </p>
           </div>
@@ -172,12 +172,12 @@ const AboutPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-sky shadow-md rounded-lg p-8 border-l-4 border-rust"
+                className="bg-cream shadow-md rounded-lg p-8 border-l-4 border-coffee"
               >
-                <h3 className="font-serif text-xl font-semibold text-dark-teal mb-3">
+                <h3 className="font-serif text-xl font-semibold text-mocha mb-3">
                   {value.title}
                 </h3>
-                <p className="text-teal leading-relaxed">
+                <p className="text-coffee leading-relaxed">
                   {value.description}
                 </p>
               </motion.div>
@@ -187,7 +187,7 @@ const AboutPage = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-20 bg-dark-teal text-sky">
+      <section className="py-20 bg-mocha text-cream">
         <div className="container mx-auto px-6 md:px-8 text-center">
           <h2 className="font-serif text-3xl font-bold mb-6">
             Ready to Create Sweet Memories?
@@ -197,7 +197,7 @@ const AboutPage = () => {
           </p>
           <a 
             href="/contact" 
-            className="bg-sky text-dark-teal hover:bg-rust hover:text-sky transition-colors duration-300 px-8 py-4 rounded-full font-medium inline-block shadow-md"
+            className="bg-cream text-mocha hover:bg-coffee hover:text-cream transition-colors duration-300 px-8 py-4 rounded-full font-medium inline-block shadow-md"
           >
             Contact Us
           </a>
